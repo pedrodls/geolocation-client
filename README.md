@@ -1,2 +1,2 @@
 # geolocation-client
-Store and get geolocation
+Client side webapp to store and get geolocation, with angular.
