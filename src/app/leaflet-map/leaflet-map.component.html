@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<div class="container-fluid mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="title h3 mt-4 text-center">
+        Esta secção, mostra todos os utilizadores cadastrados e suas localizações, faça login para criar, actualizar ou eliminar a sua localização
+      </div>
+      <div class="row mt-4 p-0">
+        <ul class="list-group list-group-horizontal justify-content-center">
+          <li class="list-group-item p-0 m-1">
+            <a href="#" class="btn btn-dark">
+              Cadastrar-se
+            </a>
+          </li>
+          <li class="list-group-item p-0 m-1">
+            <a [routerLink]="['/mapping']"  class="btn btn-warning">
+              Autenticar-se
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-8" id="map"></div>
+  </div>
+
+</div>
