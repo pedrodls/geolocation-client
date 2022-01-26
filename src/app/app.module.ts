@@ -11,6 +11,8 @@ import { LandingComponent } from './landing/landing.component';
 import { AppService } from './services/app.service';
 import { UsersService } from './services/users.service';
 import { SignupComponent } from './signup/signup.component';
+import { UserMarkerComponent } from './user-marker/user-marker.component';
+import { UsersAddressComponent } from './users-address/users-address.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { SignupComponent } from './signup/signup.component';
     AppComponent,
     LandingComponent,
     NavbarComponent,
-    SignupComponent
+    SignupComponent,
+    UserMarkerComponent,
+    UsersAddressComponent
   ],
   imports: [
     FormsModule,
