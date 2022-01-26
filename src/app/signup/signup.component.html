@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="display-6 text-center">
+      Cadastrando um endereço
+    </div>
+    <div class="col-sm-6 ">
+      <form class="form mt-5" (ngSubmit)="submit()" [formGroup]="userForm">
+        <div class="m-1 mb-1 justify-content-cente">
+          <input type="text" class="form-control" formControlName="name" placeholder="Nome">
+        </div>
+        <div class="input-group mb-1 justify-content-center">
+          <div class="m-1">
+            <input type="text" class="form-control" formControlName="country" placeholder="País">
+          </div>
+          <div class="m-1">
+            <input type="text" class="form-control" formControlName="province" placeholder="Província">
+          </div>
+        </div>
+        <div class="input-group mb-1 justify-content-center">
+          <div class="m-1">
+            <input type="number" class="form-control" formControlName="latitude" placeholder="Latitude">
+          </div>
+          <div class="m-1">
+            <input type="number" class="form-control" formControlName="longitude" placeholder="Longitude">
+          </div>
+        </div>
+        <div class="mt-4">
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-6 description-img">
+    </div>
+  </div>
+</div>

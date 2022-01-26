@@ -1,0 +1,20 @@
+.container-fluid {
+  margin-top: 5%;
+  .row {
+    .col-sm-6
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .form{
+        padding: 10px;
+      }
+    }
+    .col-sm-6.description-img {
+      background: url('../../assets/images/geolocation.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
