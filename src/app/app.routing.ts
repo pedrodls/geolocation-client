@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
-import { LeafletMapComponent } from './leaflet-map/leaflet-map.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {
@@ -12,8 +12,8 @@ const routes: Routes = [
     component: LandingComponent,
   },
   {
-    path: 'mapping',
-    component: LeafletMapComponent,
+    path: 'signup',
+    component: SignupComponent,
   }
 ];
 
