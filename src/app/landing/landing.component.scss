@@ -1,9 +1,13 @@
 .container-fluid {
-  margin-top: 5%;
 
   .row {
+    #map {
+      height: 500px;
+    }
+
     .list-group {
       border: none;
+
       .list-group-item {
         border: none;
       }
@@ -12,12 +16,8 @@
     .col-sm-6.description {
       margin-top: 5%;
 
-      .display-4 {
-        font-weight: 400;
-      }
-
       .title.h3 {
-        color: rgba(0, 0, 0, 0.61);
+        color: rgba(0, 0, 0, 0.767);
         font-weight: 100;
       }
     }

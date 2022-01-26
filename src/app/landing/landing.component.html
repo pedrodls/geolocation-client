@@ -2,28 +2,27 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-6 description ">
-      <div class="title display-4 text-center">
+      <div class="title display-5">
         Bem vindo a App de Geolocalização
       </div>
-      <div class="title h3 mt-4 text-center">
-        Cadastre e visualize o nosso mapa de usuários cadastrados
+      <div class="title h3 mt-4">
+        Os pontos no mapa, mostram as localizações dos usuários já cadastradas no nosso Web site
+      </div>
+      <div class="list-group list-group-horizontal mt-5">
+        <div class="list-group-item">
+          <a class="btn btn-primary">
+            Cadastrar uma localização
+          </a>
+        </div>
+        <div class="list-group-item">
+          <a class="btn btn-secondary">
+            Ver todos usuários
+          </a>
+        </div>
       </div>
     </div>
-    <div class="col-sm-6 description-img">
+    <div class="col-sm-6" id="map">
     </div>
   </div>
-  <div class="row mt-4 p-0">
-    <ul class="list-group list-group-horizontal justify-content-center">
-      <li class="list-group-item p-0 m-1">
-        <a href="#" class="btn btn-dark">
-          Cadastrar Localização
-        </a>
-      </li>
-      <li class="list-group-item p-0 m-1">
-        <a [routerLink]="['/mapping']"  class="btn btn-warning">
-          Mapa de Localização
-        </a>
-      </li>
-    </ul>
-  </div>
 </div>
+
