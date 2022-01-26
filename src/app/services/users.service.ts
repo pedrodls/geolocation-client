@@ -18,15 +18,17 @@ export class UsersService extends AppService implements IService<any> {
   }
 
   one(id: string): Observable<any> {
-    throw new Error('Method not implemented.');
+    return this.getOne(id)
   }
-  
+
   all(query?: any): Observable<any[]> {
     return this.getAll();
   }
+
   update(o: any, q?: any): Observable<any> {
     throw new Error('Method not implemented.');
   }
+  
   create(o: any): Observable<any> {
    return this.createOne(o);
   }
