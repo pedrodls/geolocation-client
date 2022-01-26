@@ -26,10 +26,7 @@ export class LandingComponent implements OnInit {
 
   }
 
-
   ngOnInit(): void {
-
-
     const map = L.map('map').setView([0, 0], 1);
 
     L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=FKuW2pF0QjHEj2kwsUrL', {
@@ -39,9 +36,9 @@ export class LandingComponent implements OnInit {
     }).addTo(map);
 
     this.userService.all().subscribe({
-      next: (u) => {
+      next: (users) => {
 
-        this.users = u;
+        this.users = users;
 
         this.users.forEach(user => {
           const marker = L.marker([user.latitude, user.longitude], this.icon).addTo(map);

@@ -1,28 +1,29 @@
-<app-navbar></app-navbar>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-6 description ">
-      <div class="title display-5">
-        Bem vindo a App de Geolocalização
-      </div>
-      <div class="title h3 mt-4">
-        Os pontos no mapa, mostram as localizações dos usuários já cadastradas no nosso Web site
-      </div>
-      <div class="list-group list-group-horizontal mt-5">
-        <div class="list-group-item">
-          <a class="btn btn-primary">
-            Cadastrar uma localização
-          </a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 description ">
+        <div class="title display-5">
+          Bem vindo a App de Geolocalização
         </div>
-        <div class="list-group-item">
-          <a class="btn btn-secondary">
-            Ver todos usuários
-          </a>
+        <div class="title h5 mt-4">
+          Este é um website simples, que permite fazer o <br> cadastro de localizações de usuários, bem como a sua representação num mapa
+        </div>
+        <div class="title h5 mt-4">
+          Os pontos no mapa, mostram as localizações dos <br> usuários já cadastradas no nosso Web site
+        </div>
+        <div class="list-group list-group-horizontal mt-5 justify-content-center ">
+          <div class="list-group-item p-0 m-1">
+            <a class="btn btn-primary" [routerLink]="['/signup_address']">
+              Cadastrar uma localização
+            </a>
+          </div>
+          <div class="list-group-item p-0 m-1">
+            <a class="btn btn-secondary" [routerLink]="['/users_address']">
+              Ver todos usuários
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-6" id="map">
+      <div class="col-sm-6" id="map">
+      </div>
     </div>
   </div>
-</div>
-

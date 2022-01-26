@@ -1,6 +1,7 @@
 .container-fluid {
-
   .row {
+    justify-content: center;
+    text-align: center;
     #map {
       height: 500px;
     }
@@ -15,18 +16,10 @@
 
     .col-sm-6.description {
       margin-top: 5%;
-
-      .title.h3 {
-        color: rgba(0, 0, 0, 0.767);
+      .title.h5 {
+        color: rgba(0, 0, 0, 0.836);
         font-weight: 100;
       }
-    }
-
-    .col-sm-6.description-img {
-      background: url('../../assets/images/geolocation.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
     }
   }
 }
