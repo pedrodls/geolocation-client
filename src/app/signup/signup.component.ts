@@ -30,8 +30,8 @@ export class SignupComponent implements OnInit {
 
     if (this.userForm.status != 'INVALID')
       this.userService.create(this.userModel).subscribe({
-        next: () => this.router.navigate(['/mapping']),
-        error: (e) => console.log(e)
+        next: () => this.swalResponse('Usuário cadastrado com sucesso', 'success'),
+        error: () => this.swalResponse('Erro no servidor', 'error')
       })
       else this.swalResponse('Formulário mal preenchido', 'error')
   }
@@ -40,9 +40,9 @@ export class SignupComponent implements OnInit {
     return Swal.fire({
       text: text,
       icon: icon,
-      showConfirmButton: false,
+      showConfirmButton: true,
       background: '#141B2D',
       color: '#ccc'
-    })
+    }).then(() => {if(icon == 'success') this.router.navigate(['/'])});
   }
 }
