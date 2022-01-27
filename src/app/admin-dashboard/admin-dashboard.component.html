@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="row justify-content-end">
+    <div class="col-md-12 text-end">
+      <h2><span class="badge bg-secondary">Admin</span></h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-sm-12">
+          <form>
+            <div class="title h4 text-center mt-3">
+              <h1 class="title display-6">Todos os usários cadastrados</h1>
+            </div>
+            <div class="mb-3">
+              <select class="form-control nav-select" (change)='filting($event)'>
+                <option value="all" selected>Todos</option>
+                <option value="year">Por Ano</option>
+                <option value="month">Por Mês</option>
+                <option value="week">Por Semana(actual)</option>
+              </select>
+            </div>
+            <div class="mb-3 {{!filterYear ? 'd-none': ''}}">
+              <select class="form-control nav-select"  (change) = 'filtingYear($event)'>
+                <option selected>Selecione o ano</option>
+                <option *ngFor="let year of years" value="{{year}}">{{year}}</option>
+              </select>
+            </div>
+            <div class="mb-3 {{!filterMonth ? 'd-none': ''}}">
+              <select class="form-control nav-select " (change) = 'filtingMonth($event)'>
+                <option>Seleccione o mês</option>
+                <option *ngFor="let month of months;" value="{{month}}">{{month}}</option>
+              </select>
+            </div>
+          </form>
+          <table class="table text-center mt-2">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Data de cadastro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of users; let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{user.name}}</td>
+                <td>{{user.createdAt}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
