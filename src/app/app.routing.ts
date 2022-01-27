@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { LandingComponent } from './landing/landing.component';
 import { SignupComponent } from './signup/signup.component';
 import { UserMarkerComponent } from './user-marker/user-marker.component';
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'mapping/:id',
     component: UserMarkerComponent,
+  },
+  {
+    path: 'admin_dashboard',
+    component: AdminDashboardComponent,
   }
 ];
 
