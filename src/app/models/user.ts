@@ -6,7 +6,8 @@ export class User {
   province!: any;
   latitude!: any;
   longitude!: any;
-
+  createdAt!: any;
+  
   constructor() {
   }
 }
