@@ -47,10 +47,6 @@ export class UserMarkerComponent implements OnInit {
       attribution:
         '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
     }).addTo(this.map);
-
-    console.log(this.userId)
-
-
   }
 
   mapUser(id: any){
