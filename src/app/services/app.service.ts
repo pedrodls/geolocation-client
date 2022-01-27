@@ -11,7 +11,7 @@ export class AppService {
 
   protected url: any;
   protected headers: any;
-  protected serverAddress = environment.serverAddress;
+  protected serverAddress = 'http://localhost:9800/';
 
   constructor(public http: HttpClient, @Inject(String) private service: string) {
 
