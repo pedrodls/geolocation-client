@@ -13,6 +13,7 @@ import { UsersService } from './services/users.service';
 import { SignupComponent } from './signup/signup.component';
 import { UserMarkerComponent } from './user-marker/user-marker.component';
 import { UsersAddressComponent } from './users-address/users-address.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { UsersAddressComponent } from './users-address/users-address.component';
     NavbarComponent,
     SignupComponent,
     UserMarkerComponent,
-    UsersAddressComponent
+    UsersAddressComponent,
+    AdminDashboardComponent
   ],
   imports: [
     FormsModule,

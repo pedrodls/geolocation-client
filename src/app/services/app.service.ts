@@ -38,9 +38,8 @@ export class AppService {
     return this.http.get(this.url+'/'+query, this.headers);
   }
 
-  protected getOne(a: any): Observable<any> {
-    const id = this.getQuery(a);
-    return this.http.get(this.url+'/'+id, this.headers)
+  protected getOne(id: any): Observable<any> {
+    return this.http.get(this.url+'/'+id)
   }
 
   protected createOne(o: any): Observable<any> {
